@@ -5,11 +5,10 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: "Montserrat", sans-serif;
-    background: #0a0a0a;
     color: white;
     text-align: center;
     overflow: hidden;
-    text-decoration: none;
+
 }
 
 /* Задний фон с анимацией */
@@ -19,7 +18,8 @@ canvas#background {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Отправляем canvas на задний план */
+    z-index: -1;
+    background: #000;
 }
 
 /* Стили для заголовка */
@@ -27,8 +27,6 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    right: 0;
-    z-index: 10001;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,6 +42,8 @@ section {
     padding: 0px 20px 20px;
 }
 
+
+
 h1 {
     font-size: 36px;
 }
@@ -52,7 +52,7 @@ h1 {
     color: #0099ff;
 }
 
-a.discord-button {
+.discord_button {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 10px;
@@ -71,13 +71,16 @@ a.discord-button {
 }
 
 .platform {
-    background: #1a1a1a;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(.6px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
     padding: 100px;
     border-radius: 10px;
     width: 300px;
 }
 
-button {
+.devclass {
     display: block;
     width: 100%;
     padding: 25px;
@@ -89,16 +92,16 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
-button:hover {
+.devclass:hover {
     background: #0099ff;
 }
 
 /* Футер */
 footer {
     padding: 20px;
-    background: #111;
 }
 
 /* Адаптация под мобильные устройства */
