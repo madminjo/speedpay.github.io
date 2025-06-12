@@ -20,6 +20,7 @@ canvas#background {
     height: 100%;
     z-index: -1;
     background: #000;
+    pointer-events: none;
 }
 
 /* Стили для заголовка */
