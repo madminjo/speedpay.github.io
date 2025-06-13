@@ -7,7 +7,6 @@ body, html {
     font-family: "Montserrat", sans-serif;
     color: white;
     text-align: center;
-    overflow: hidden;
 
 }
 
@@ -20,7 +19,6 @@ canvas#background {
     height: 100%;
     z-index: -1;
     background: #000;
-    pointer-events: none;
 }
 
 /* Стили для заголовка */
