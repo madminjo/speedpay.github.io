@@ -1,132 +1,63 @@
-/* Общие стили */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
     font-family: "Montserrat", sans-serif;
-    color: white;
-    text-align: center;
-
 }
 
-/* Задний фон с анимацией */
+/* Body */
+body {
+    background-color: #222;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* canvas#background */
 canvas#background {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: -1;
-    background: #000;
 }
-
-/* Стили для заголовка */
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 13%;
-}
-
-.logo img{
-    width: 100px;
-    height: auto;
-}
-
 section {
-    padding: 0px 20px 20px;
-}
-
-
-
-h1 {
-    font-size: 36px;
-}
-
-.highlight {
-    color: #0099ff;
-}
-
-.discord_button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background: #5865F2;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Контейнер с платформами */
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-}
-
-.platform {
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(.6px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 20px;
     padding: 100px;
-    border-radius: 10px;
-    width: 300px;
 }
 
-.devclass {
-    display: block;
-    width: 100%;
-    padding: 25px;
-    margin: 20px 0;
-    border: none;
-    border-radius: 5px;
-    background: #333;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    text-decoration: none;
+nav {
+    ul {
+        li {
+            a {
+                transition: all 0.42s ease-in-out;
+            }
+            a:hover {
+                color: rgba(2, 6, 252, 0.685);
+                transform: translateY(-5px);
+            }
+        }
+    }
 }
 
-.devclass:hover {
-    background: #0099ff;
+.header__button {
+    a{
+        transition: all 0.42s ease-in-out;
+    }
+    a:hover {
+        background: #ffffff;
+        color: rgba(2, 6, 252, 0.685);
+    }
 }
-
-/* Футер */
-footer {
-    padding: 20px;
-}
-
-/* Адаптация под мобильные устройства */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+.home__button {
+    a{
+        transition: all 0.42s ease-in-out;
     }
-    
-    .platform {
-        width: 90%;
-        max-width: 350px;
-    }
-    
-    h1 {
-        font-size: 28px;
-    }
-    
-    .discord-button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-    
-    button {
-        font-size: 14px;
-        padding: 8px;
+    a:hover {
+        background: #ffffff;
+        color: rgba(2, 6, 252, 0.685);
     }
 }
