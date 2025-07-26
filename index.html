@@ -1,53 +1,111 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speedpay</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- for icon html -->
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-    <!-- for Google Fonts html -->
+    <link rel="shortcut icon" href="./Asset/Png/shopping-bag.png" type="image/x-icon">
+    <title>SpeedPay — Официальное Пополнение Алмазов Free Fire</title>
+    <!-- Here is the Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Montserrat:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Here is the BoxIcon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Here is the TailwindCSS link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Here is the CSS link -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <canvas id="background"></canvas> 
 
-    <section>
-        <h1>Проект<span class="highlight">Speedpay</span></h1>
-        <p>Лучший сервер Free Fire, созданный игроком для игроков.</p>
-        <a href="https://t.me/+dFHDYylQEOc3NzBi" class="discord_button">Присоединяйтесь к Telegram</a>
-    </section>
+    <header  style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);"  class="h-[100px] backdrop-blur-xs bg-[#1b1d24]/70">
+        <div class="container">
+            <div style="padding: 20px;" class="header__items flex items-center justify-between ">
+                <div class="header__logo">
+                    <h1 class="text-4xl font-bold text-white">Speed<span class="text-blue-600">Pay</span></h1>
+                </div>
+                <nav>
+                    <ul class="flex gap-8 text-white fonts-normal text-lg text-center">
+                        <li><a href="#Home">Главная</a></li>
+                        <li><a href="#Prices">Цены</a></li>
+                        <li><a href="#Blog">Блог</a></li>
+                        <li><a href="#Reviews">Отзывы</a></li>
+                        <li><a href="#Contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__button" id="Prices">
+                    <a style="padding: 14px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl" href="https://t.me/speedpayadmin">Написать</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>
-        <div class="container">
-            <section class="platform">
-                <h2>Android</h2>
-                <a href="#" class="devclass"><i class='bx bx-download'></i> Скачать Free Fire Global APK</a>
-                <a href="#" class="devclass"><i class='bx bx-download'></i> Скачать Speedpay Project APK</a>
-                <a href="#"class="devclass" ><i class='bx bx-video' ></i> Туториал на Android</a>
-            </section>
-            <section class="platform">
-                <h2>iOS</h2>
-                <a href="#" class="devclass"><i class='bx bx-server' ></i> Информация о прокси-сервере</a>
-                <a href="#" class="devclass"><i class='bx bx-certification' ></i> Скачать сертификат</button>
-                </a>
-                <a href="#" class="devclass"><i class='bx bx-video' ></i> Туториал на iOS</a>
-            </section>
-        </div>
+        <!-- Homme -->
+        <section class="home" id="#Home">
+            <div class="container">
+                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="home__items flex grid gap-8 text-center items-center justify-center backdrop-blur-xs bg-[#1b1d24]/70 p-[100px] rounded-2xl">
+                    <div class="home__img flex items-center justify-center">
+                        <img style="width: 800px;"  class="rounded-2xl" src="./Asset/Png/Shopp-home.jpg" alt="Free Fire Image">
+                    </div>
+                    <div class="home__titels text-white text-center items-center flex grid gap-4">
+                        <h1 class="text-4xl font-bold max-w-[800px] mt-[10px]">Официальное Пополнение Алмазов  Free Fire — Быстро и Надёжно!</h1>
+                        <p class="fonts-base max-w-[600px] text-center m-auto">Купи алмазы с мгновенной доставкой и по самым выгодным ценам. Безопасно, удобно и без риска!</p>
+                    </div>
+                    <div class="home__button">
+                        <a style="padding: 14px 40px;" class=" text-white text-lg fonts-base bg-blue-800 rounded-xl" href="https://t.me/speedpayshop">Присоединиться</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- prices1 -->
+         <section class="Prices1">
+            <div class="container">
+                <div class="prices1__items">
+                        <div class="prices1__titles items-center justify-center flex grid gap-4 text-center">
+                        <h2 class="text-4xl text-white font-bold">💎 Наши алмазы — быстро, выгодно и безопасно!</h2>
+                        <p class="text-xl text-white">Покупай с уверенностью и комфортом</p>
+                        </div>
+                    <div class="prices__block1 pt-[80px] flex gap-8 items-center justify-center text-center text-white">
+                        <div style=" box-shadow: 20px 50px 80px #0a0dbdaf;" class="block1 gap-4 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                           <a class="list-group-item" href="#"><i class="fa fa-bolt fa-3x" aria-hidden="true"></i></i></a>
+                            <h2 class="text-lg pt-[20px]">Быстрая доставка</h2>
+                            <p class="text-xs pt-[5px]">Получай алмазы сразу после оплаты</p>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-12 rounded-2xl">
+                            <a class="list-group-item" href="#"><i class="fa fa-shield fa-3x" aria-hidden="true"></i></a>
+                            <h2 class="text-lg pt-[20px]">Официально и безопасно</h2>
+                            <p class="text-xs pt-[5px]">Работаем с проверенными поставщиками</p>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a class="list-group-item" href="#"><i class="fa fa-credit-card-alt fa-3x" aria-hidden="true"></i></i></a>
+                            <h2 class="text-lg pt-[20px]">Лучшие цены</h2>
+                            <p class="text-xs pt-[5px]">Экономь с нашими скидками и акциями</p>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a class="list-group-item" href="#"><i class="fa fa-question-circle fa-3x" aria-hidden="true"></i></i></a>
+                            <h2 class="text-lg pt-[20px]">Поддержка 24/7</h2>
+                            <p class="text-xs pt-[5px]">Помогаем в любое время дня и ночи</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- Prices of -->
+        <section class="prices">
+            <div class="container">
+                <div class="prices__items">
+                    
+                </div>
+            </div>
+        </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Все права защищены. Разработчик Scray dev</p>
-    </footer>
-
-    <script src="script.js"></script>
+    
+    <!-- Here is the JavaScrip link -->
+    <canvas id="background"></canvas>
+    <script src="./script.js"></script>
 </body>
 </html>
