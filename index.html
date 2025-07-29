@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Asset/Png/shopping-bag.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Asset/Png/shopping-bag.png" type="image/x-icon">
     <title>SpeedPay — Официальное Пополнение Алмазов Free Fire</title>
     <!-- Here is the Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
     <!-- Here is the BoxIcon link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Here is the TailwindCSS link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Here is the CSS link -->
@@ -26,16 +27,22 @@
                     <h1 class="text-4xl font-bold text-white">Speed<span class="text-blue-600">Pay</span></h1>
                 </div>
                 <nav>
-                    <ul class="flex gap-8 text-white fonts-normal text-lg text-center">
-                        <li><a href="#Home">Главная</a></li>
-                        <li><a href="#Prices">Цены</a></li>
-                        <li><a href="#Blog">Блог</a></li>
-                        <li><a href="#Reviews">Отзывы</a></li>
-                        <li><a href="#Contacts">Контакты</a></li>
+                    <ul class="flex gap-8 text-white fonts-normal text-lg text-center max-w-{}">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#prices">Цены</a></li>
+                        <li><a href="#blog">Блог</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
+                    <a href="#"></a>
                 </nav>
-                <div class="header__button" id="Prices">
-                    <a style="padding: 14px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl" href="https://t.me/speedpayadmin">Написать</a>
+                <div class="header__button flex gap-4" id="Prices">
+                    <div class="header__register">
+                    <a style="padding: 14px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl" href="./Acsses/Home/indexHome.html">Зарегистрироваться</a>
+                    </div>
+                    <div class="header__exit">
+                    <a style="padding: 14px 40px;" class="text-blue-800 text-lg fonts-base bg-white rounded-xl border-[2px] border-blue-800" href="./Acsses/Home/indexHome.html">Войти</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,11 +50,11 @@
 
     <main>
         <!-- Homme -->
-        <section class="home" id="#Home">
+        <section class="home" id="home">
             <div class="container">
-                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="home__items flex grid gap-8 text-center items-center justify-center backdrop-blur-xs bg-[#1b1d24]/70 p-[100px] rounded-2xl">
+                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="home__items flex grid gap-8 text-center items-center justify-center rounded-2xl backdrop-blur-xs bg-[#1b1d24]/70  p-[100px] ">
                     <div class="home__img flex items-center justify-center">
-                        <img style="width: 800px;"  class="rounded-2xl" src="/Asset/Png/Shopp-home.jpg" alt="Free Fire Image">
+                        <img style="width: 800px;"  class="rounded-2xl" src="./Asset/Png/Shopp-home.jpg" alt="Free Fire Image">
                     </div>
                     <div class="home__titels text-white text-center items-center flex grid gap-4">
                         <h1 class="text-4xl font-bold max-w-[800px] mt-[10px]">Официальное Пополнение Алмазов  Free Fire — Быстро и Надёжно!</h1>
@@ -65,12 +72,12 @@
             <div class="container">
                 <div class="prices1__items">
                         <div class="prices1__titles items-center justify-center flex grid gap-4 text-center">
-                        <h2 class="text-4xl text-white font-bold">💎 Наши алмазы — быстро, выгодно и безопасно!</h2>
+                        <h2 class="text-4xl text-white font-bold max-[1150px]:text-3xl">💎 Наши алмазы — быстро, выгодно и безопасно!</h2>
                         <p class="text-xl text-white">Покупай с уверенностью и комфортом</p>
                         </div>
-                    <div class="prices__block1 pt-[80px] flex gap-8 items-center justify-center text-center text-white">
+                    <div class="prices__block1 pt-[80px] flex gap-8 items-center justify-center text-center text-white max-[1000px]:flex-col">
                         <div style=" box-shadow: 20px 50px 80px #0a0dbdaf;" class="block1 gap-4 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
-                           <a class="list-group-item" href="#"><i class="fa fa-bolt fa-3x" aria-hidden="true"></i></i></a>
+                           <a class="list-group-item" href="#"><i class="fa fa-bolt fa-3x max-[1150px]:fa-lg" aria-hidden="true"></i></i></a>
                             <h2 class="text-lg pt-[20px]">Быстрая доставка</h2>
                             <p class="text-xs pt-[5px]">Получай алмазы сразу после оплаты</p>
                         </div>
@@ -97,12 +104,290 @@
          <!-- Prices of -->
         <section class="prices">
             <div class="container">
-                <div class="prices__items">
+                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="prices__items flex grid gap-8 text-center items-center justify-center backdrop-blur-xs bg-[#1b1d24]/70 p-[100px] rounded-2xl">
+                    <div class="prices_titles">
+                        <h2 class="text-4xl text-white font-bold">🔍 Узнай данные профиля</h2>
+                        <p class="text-lg text-white fonts-base pt-[20px]">Введи свой ID — получи имя и айди аккаунта!</p>
+                    </div>
+                    <div class="prices__box">
+                        <input class="w-full bg-transparent border border-gray-600 rounded-xl px-4 py-3 pr-10 text-white placeholder-gray-400 focus:outline-none focus:ring-0" type="text" id="player-uid" placeholder="Укажи ID своего аккаунта!" maxlength="11">
+                    <div class="prices__button pt-[20px]">
+                        <button style="padding: 12px 80px;" class=" text-white text-lg fonts-base bg-blue-800 rounded-xl">Проверить</button>
+                    </div>
+                    </div>
+                    <div class="prices__result">
+                        <div class="result__box">
+                            <h3 class="text-2xl text-white font-bold">Результат:</h3>
+                            <p class="text-lg text-white fonts-base pt-[10px]">Имя игрока: <span id="player-name" class="text-blue-600"></span></p>
+                            <p class="text-lg text-white fonts-base pt-[5px]">ID аккаунта: <span id="player-id" class="text-blue-600"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Almaz -->
+        <section class="almaz">
+            <div class="container">
+                <div class="almaz__items">
+                    <div class="almaz__titels flex flex-col items-center justify-center gap-4 text-center">
+                        <h2 class="text-4xl text-white font-bold">💎 Выбери Пакет Алмазов</h2>
+                        <p class="text-lg text-white fonts-base max-w-[600px]">Выбери количество алмазов, которое хочешь получить. Большие пакеты — больше бонусов и выгоднее цена!</p>
+                    </div>
+
+                    <div class="almaz__block flex gap-8 items-center justify-center text-center text-white pt-[80px] max-[1000px]:flex-col">
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fas fa-gem text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-2xl font-bold pt-4">100 Алмазов</h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 50 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fas fa-gem text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-2xl font-bold pt-4">310 Алмазов</h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 200 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fas fa-gem text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-2xl font-bold pt-4">520 Алмазов</h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 400 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                    </div>
+
                     
+                    <div class="almaz__block flex gap-8 items-center justify-center text-center text-white pt-[80px] flex-col">
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fas fa-gem text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-2xl font-bold pt-4">1060 Алмазов</h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 50 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fas fa-gem text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-2xl font-bold pt-4">2180 Алмазов</h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 200 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fas fa-gem text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-2xl font-bold pt-4">5600 Алмазов</h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 400 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Waucher -->
+        <section class="waucher"id="prices" >
+            <div class="container">
+                <div class="waucher__items">
+                    <div class="waucher__titels flex flex-col items-center justify-center gap-4 text-center">
+                        <h2 class="text-4xl text-white font-bold">🎫 Выбери Пакет Ваучеров</h2>
+                        <p class="text-lg text-white fonts-base max-w-[600px]">Используй ваучеры для покупок и бонусов в игре. Дешевле и выгоднее!</p>
+                    </div>
+
+
+                    <div class="waucher flex gap-8 items-center justify-center text-center text-white pt-[80px] max-[1000px]:flex-col">
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fa fa-calendar text-blue-800 fa-3x" aria-hidden="true"></i></a>
+                            <h3 class="text-1xl font-bold pt-4">Ваучер на Неделю <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 50 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fa fa-calendar text-blue-800 fa-3x" aria-hidden="true"></i></a>
+                            <h3 class="text-1xl font-bold pt-4">Ваучер на Месяц <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 200 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fa fa-address-card text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-1xl font-bold pt-4">Еженедельный Lite <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 400 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 pr-20 pl-20 rounded-2xl">
+                            <a href="#"><i class="fa fa-address-card text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-1xl font-bold pt-4">BP Card <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 400 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="almaz__block flex gap-8 items-center justify-center text-center text-white pt-[80px] max-[1000px]:flex-col">
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fa fa-credit-card text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-1xl font-bold pt-4">Evo Access 3D <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 50 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fa fa-credit-card text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-1xl font-bold pt-4">Evo Access 7D <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 200 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                        <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="block1 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
+                            <a href="#"><i class="fa fa-credit-card text-blue-800 fa-3x"></i></a>
+                            <h3 class="text-1xl font-bold pt-4">Evo Access 30D <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h3>
+                            <p class="text-lg fonts-base pt-[10px]">Цена: 200 руб.</p>
+                            <button style="padding: 12px 40px;" class="text-white text-lg fonts-base bg-blue-800 rounded-xl mt-[20px]">Купить</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="Blog" id="blog">
+            <div class="container">
+                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="blog__items flex grid gap-8 text-center items-center justify-center backdrop-blur-xs bg-[#1b1d24]/70 p-[100px] rounded-2xl">
+                    <div class="prices_titles">
+                        <h2 class="text-4xl text-white font-bold">🏷️ Промокод на Скидку</h2>
+                        <p class="text-lg text-white fonts-base pt-[20px]">Введи свой код и получи подарок или бонус.</p>
+                    </div>
+                    <div class="blog__box">
+                        <input class="w-full bg-transparent border border-gray-600 rounded-xl px-4 py-3 pr-5 text-white placeholder-gray-400 focus:outline-none focus:ring-0" type="text" id="player-uid" placeholder="Укажите Промокод" maxlength="11">
+                    <div class="blog__button pt-[20px]">
+                        <button style="padding: 12px 80px;" class=" text-white text-lg fonts-base bg-blue-800 rounded-xl">Проверить</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="reviews">
+            <div class="container">
+                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="reviews__items flex grid gap-8 text-center items-center justify-center backdrop-blur-xs bg-[#1b1d24]/70 p-[100px] rounded-2xl">
+                    <div class="reviews_titles">
+                        <h2 class="text-4xl text-white font-bold">🗣️ Оставь отзыв</h2>
+                        <p class="text-lg max-w-[600px] text-white fonts-base pt-[20px]">Поделись впечатлениями — даже один комментарий может помочь другим!</p>
+                    </div>
+                    <div class="blog">
+                        <div class="reviews__blog">
+                            <input class="w-full bg-transparent border border-gray-600 rounded-xl px-4 py-3 pr-5 text-white placeholder-gray-400 focus:outline-none focus:ring-0" type="text" id="player-uid" placeholder="Укажите своё имя" maxlength="20">
+                        </div>
+
+                        <div class="reviews__blog pt-[20px]">
+                            <input class="w-full bg-transparent border border-gray-600 rounded-xl px-4 py-3 pr-5 text-white placeholder-gray-400 focus:outline-none focus:ring-0" type="text" id="player-uid" placeholder="Напиши свой отзыв" maxlength="100">
+                        </div>
+                    <div class="blog__button pt-[20px]">
+                        <button style="padding: 12px 80px;" class=" text-white text-lg fonts-base bg-blue-800 rounded-xl">Отправить</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Reviews Text -->
+        <secetion class="reviws__text "id="reviews">
+            <div class="container">
+                <div class="reviwsText__items">
+                    <div class="reviwsText_titles flex flex-col items-center justify-center gap-4 text-center">
+                        <h2 class="text-4xl text-white font-bold">⭐ Отзывы игроков</h2>
+                        <p class="text-lg max-w-[600px] text-white fonts-base pt-[20px]">Реальные мнения наших пользователей. Нам важно ваше доверие — читай, что говорят другие!</p>
+                    </div>
+
+                    <div class="reviwsText__block">
+                        <div class="flex flex-wrap gap-8 justify-center pt-8">
+                            <!-- Отзыв 1 -->
+                            <div style="box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="backdrop-blur-xs bg-[#1b1d24]/70 rounded-2xl p-6 sm:p-8 text-white w-full sm:w-80 flex flex-col items-center mb-6 sm:mb-0">
+                                <i class="fa fa-user-circle fa-3x text-blue-800 mb-2"></i>
+                                <h3 class="font-bold text-lg mb-2">Имя пользователя</h3>
+                                <p class="text-base text-center">Очень понравился сервис! Всё быстро и удобно.</p>
+                            </div>
+                            <!-- Отзыв 2 -->
+                            <div style="box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="backdrop-blur-xs bg-[#1b1d24]/70 rounded-2xl p-6 sm:p-8 text-white w-full sm:w-80 flex flex-col items-center mb-6 sm:mb-0">
+                                <i class="fa fa-user-circle fa-3x text-blue-800 mb-2"></i>
+                                <h3 class="font-bold text-lg mb-2">Имя пользователя</h3>
+                                <p class="text-base text-center">Отличные цены и поддержка, рекомендую!</p>
+                            </div>
+                            <!-- Отзыв 3 -->
+                            <div style="box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="backdrop-blur-xs bg-[#1b1d24]/70 rounded-2xl p-6 sm:p-8 text-white w-full sm:w-80 flex flex-col items-center">
+                                <i class="fa fa-user-circle fa-3x text-blue-800 mb-2"></i>
+                                <h3 class="font-bold text-lg mb-2">Имя пользователя</h3>
+                                <p class="text-base text-center">Покупал алмазы — всё супер, спасибо!</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </secetion>
+
+        <!-- Contact -->
+        <section class="contact" id="contacts">
+            <div class="container">
+                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="reviews__items flex  gap-8  items-center justify-between backdrop-blur-xs bg-[#1b1d24]/70 p-[50px] rounded-2xl">
+                    <div class="contact__block1 text-white flex flex-col gap-4">
+                        <div class="blog1">
+                            <h2 class="text-lg text-white-800">ООО "SPEEDPAY SHOP"</h2>
+                            <p class="text-lg text-white-800">Магазин на всю снг</p>
+                            <h2 class="text-lg text-white-800">Tg: @speedpayshop / hello@speedpay.com</h2>
+                        </div>
+                        <div class="blog2">
+                            <h2 class="text-2xl font-semibold text-white-800">Speed<span class="text-blue-800 font-semibold">Pay</span></h2>
+                            <p>Алмазный сервер</p>
+                        </div>
+
+                        <div class="blog3">
+                            <a href="#"><i class="fa fa-telegram"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-vk"></i></a>
+                        </div>
+
+                        <div class="blog4">
+                            <h2>© 2024 - 2025 ООО "SpeedPay Shop". Все права защищены.</h2>
+                            <h2 class="max-w-[500px]">Перепечатка и любое использвание материалов возможно только при наличии ссылки на первоисточника.</h2>
+                        </div>
+                    </div>
+                    <div class="contact__block1 flex text-white gap-8">
+                        <div class="blog22 flex flex-col gap-4 pt-15">
+                            <a href="#">Домой</a>
+                            <a href="#">Компания</a>
+                            <a href="#">Продукты</a>
+                            <a href="#">Наши проекты</a>
+                            <a href="#">Новости</a>
+                            <a href="#">Клиенты</a>
+                            <a href="#">Помощь</a>
+                            <a href="#">Связаться с нами</a>
+                        </div>
+                        <div class="blog33 flex flex-col gap-2">
+                            <h2 class="text-2xl font-bold">О нас</h2>
+                            <a href="#">Главная</a>
+                            <a href="#">О компании</a>
+                            <a href="#">Наши услуги</a>
+                            <a href="#">Проекты</a>
+                            <a href="#">Команда</a>
+                            <a href="#">Портфолио</a>
+                            <a href="#">Отзывы клиентов</a>
+                            <a href="#">Блог</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">Поддержка</a>
+                            <a href="#">Контакты</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__items flex items-center justify-between pt-4">
+                <h2>Компания SpeedPay</h2>
+                <h2>Разработчик ScrayDev / Madazimov Madaminjon</h2>
+                <h2>Компания по Разработчика NexVisualt</h2>
+            </div>
+        </div>
+    </footer>
     
     <!-- Here is the JavaScrip link -->
     <canvas id="background"></canvas>
