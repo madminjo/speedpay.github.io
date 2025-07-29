@@ -55,16 +55,16 @@
         <!-- Homme -->
         <section class="home" id="home">
             <div class="container">
-                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="home__items max-[550px]:w-[400px] flex grid gap-8 text-center items-center justify-center rounded-2xl backdrop-blur-xs bg-[#1b1d24]/70  p-[100px] ">
+                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="home__items max-[550px]:w-[320px] flex grid gap-8 text-center items-center justify-center rounded-2xl backdrop-blur-xs bg-[#1b1d24]/70  p-[100px] ">
                     <div class="home__img flex items-center justify-center">
-                        <img style="width: 800px;"  class="rounded-2xl" src="./Asset/Png/Shopp-home.jpg" alt="Free Fire Image">
+                        <img style="width: 800px; "  class="rounded-2xl max-[550px]:w-200px" src="./Asset/Png/Shopp-home.jpg" alt="Free Fire Image">
                     </div>
                     <div class="home__titels text-white text-center items-center flex grid gap-4">
-                        <h1 class="text-4xl font-bold max-w-[800px] mt-[10px]">Официальное Пополнение Алмазов  Free Fire — Быстро и Надёжно!</h1>
-                        <p class="fonts-base max-w-[600px] text-center m-auto">Купи алмазы с мгновенной доставкой и по самым выгодным ценам. Безопасно, удобно и без риска!</p>
+                        <h1 class="text-4xl font-bold max-w-[800px] mt-[10px] max-[600px]:text-2xl">Официальное Пополнение Алмазов  Free Fire — Быстро и Надёжно!</h1>
+                        <p class="fonts-base max-w-[600px] text-center m-auto max-[600px]:text-xs">Купи алмазы с мгновенной доставкой и по самым выгодным ценам. Безопасно, удобно и без риска!</p>
                     </div>
                     <div class="home__button">
-                        <a style="padding: 14px 40px;" class=" text-white text-lg fonts-base bg-blue-800 rounded-xl" href="https://t.me/speedpayshop">Присоединиться</a>
+                        <a href="https://t.me/speedpayshop" class="px-8 py-3 md:px-10 md:py-3 max-[780px]:text-xs text-white text-lg font-base bg-blue-800 rounded-xl">Присоединиться</a>
                     </div>
                 </div>
             </div>
@@ -75,8 +75,8 @@
             <div class="container">
                 <div class="prices1__items">
                         <div class="prices1__titles items-center justify-center flex grid gap-4 text-center">
-                        <h2 class="text-4xl text-white font-bold max-[1150px]:text-3xl">💎 Наши алмазы — быстро, выгодно и безопасно!</h2>
-                        <p class="text-xl text-white">Покупай с уверенностью и комфортом</p>
+                        <h2 class="text-4xl text-white font-bold max-[1150px]:text-3xl max-[700px]:text-2xl max-[550px]:text-1xl">💎 Наши алмазы — быстро, выгодно и безопасно!</h2>
+                        <p class="text-xl text-white max-[640px]:text-base max-[500px]:text-xs">Покупай с уверенностью и комфортом</p>
                         </div>
                     <div class="prices__block1 pt-[80px] flex gap-8 items-center justify-center text-center text-white max-[1000px]:flex-col">
                         <div style=" box-shadow: 20px 50px 80px #0a0dbdaf;" class="block1 gap-4 backdrop-blur-xs bg-[#1b1d24]/70 p-15 rounded-2xl">
@@ -107,22 +107,22 @@
          <!-- Prices of -->
         <section class="prices">
             <div class="container">
-                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="prices__items flex grid gap-8 text-center items-center justify-center backdrop-blur-xs bg-[#1b1d24]/70 p-[100px] rounded-2xl">
+                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="prices__items max-[550px]:w-[320px] flex grid gap-8 text-center items-center justify-center backdrop-blur-xs bg-[#1b1d24]/70 p-[100px] rounded-2xl">
                     <div class="prices_titles">
-                        <h2 class="text-4xl text-white font-bold">🔍 Узнай данные профиля</h2>
-                        <p class="text-lg text-white fonts-base pt-[20px]">Введи свой ID — получи имя и айди аккаунта!</p>
+                        <h2 class="text-4xl text-white font-bold max-[780px]:text-2xl ">🔍 Узнай данные профиля</h2>
+                        <p class="text-lg text-white fonts-base pt-[20px] max-[780px]:text-xs">Введи свой ID — получи имя и айди аккаунта!</p>
                     </div>
                     <div class="prices__box">
                         <input class="w-full bg-transparent border border-gray-600 rounded-xl px-4 py-3 pr-10 text-white placeholder-gray-400 focus:outline-none focus:ring-0" type="text" id="player-uid" placeholder="Укажи ID своего аккаунта!" maxlength="11">
                     <div class="prices__button pt-[20px]">
-                        <button style="padding: 12px 80px;" class=" text-white text-lg fonts-base bg-blue-800 rounded-xl">Проверить</button>
+                        <button style="padding: 12px 80px;" class="px-8 py-3 md:px-10 md:py-3 max-[780px]:text-xs text-white text-lg font-base bg-blue-800 rounded-xl">Проверить</button>
                     </div>
                     </div>
                     <div class="prices__result">
                         <div class="result__box">
-                            <h3 class="text-2xl text-white font-bold">Результат:</h3>
-                            <p class="text-lg text-white fonts-base pt-[10px]">Имя игрока: <span id="player-name" class="text-blue-600"></span></p>
-                            <p class="text-lg text-white fonts-base pt-[5px]">ID аккаунта: <span id="player-id" class="text-blue-600"></span></p>
+                            <h3 class="text-2xl text-white font-bold max-[780px]:text-lg">Результат:</h3>
+                            <p class="text-lg text-white fonts-base pt-[10px] max-[780px]:text-xs">Имя игрока: <span id="player-name" class="text-blue-600"></span></p>
+                            <p class="text-lg text-white fonts-base pt-[5px] max-[780px]:text-xs">ID аккаунта: <span id="player-id" class="text-blue-600"></span></p>
                         </div>
                     </div>
                 </div>
