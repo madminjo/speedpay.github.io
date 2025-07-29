@@ -5,11 +5,13 @@
     font-family: "Montserrat", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* Body */
 body {
     background-color: #222;
     background-size: cover;
-    scroll-behavior: smooth;
 }
 
 /* Container */
@@ -43,7 +45,27 @@ nav {
     }
 }
 
-.header__button {
+/* .header__button {
+    .header__register {
+    a{
+        transition: all 0.42s ease-in-out;
+    }
+    a:hover {
+        background: #ffffff;
+        color: rgba(2, 6, 252, 0.685);
+    }
+    }
+    .header__exit {
+    a{
+        transition: all 0.42s ease-in-out;
+    }
+    a:hover {
+        background: rgba(2, 6, 252, 0.685);
+        color: #ffffff;
+    }
+    }
+} */
+.home__button {
     a{
         transition: all 0.42s ease-in-out;
     }
@@ -52,12 +74,30 @@ nav {
         color: rgba(2, 6, 252, 0.685);
     }
 }
-.home__button {
-    a{
+.prices__button {
+    button {
         transition: all 0.42s ease-in-out;
     }
-    a:hover {
+    button:hover {
         background: #ffffff;
         color: rgba(2, 6, 252, 0.685);
+    }
+}
+.contact__block1 {
+    .blog22 {
+        a {
+           transition: all .42s ease-in-out; 
+        }
+        a:hover {
+            color: rgba(2, 6, 252, 0.685); 
+        }
+    }
+    .blog33 {
+        a {
+           transition: all .42s ease-in-out; 
+        }
+        a:hover {
+            color: rgba(2, 6, 252, 0.685); 
+        }
     }
 }
