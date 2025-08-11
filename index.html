@@ -35,7 +35,7 @@
                         <li><a href="#contacts">Контакты</a></li>
                     </ul>
 
-                    <a href="#" class="max-[2000px]:hidden max-[1000px]:block"><i class="fa fa-bars text-blue-800 fa-3x" aria-hidden="true"></i></a>
+                    <a href="#" class=" max-[1000px]:block"><i class="fa fa-bars text-blue-800 fa-3x" aria-hidden="true"></i></a>
 
 
                 </nav>
@@ -113,16 +113,16 @@
                         <p class="text-lg text-white fonts-base pt-[20px] max-[780px]:text-xs">Введи свой ID — получи имя и айди аккаунта!</p>
                     </div>
                     <div class="prices__box">
-                        <input class="w-full bg-transparent border border-gray-600 rounded-xl px-4 py-3 pr-10 text-white placeholder-gray-400 focus:outline-none focus:ring-0" type="text" id="player-uid" placeholder="Укажи ID своего аккаунта!" maxlength="11">
+                        <input class="w-full bg-transparent border border-gray-600 rounded-xl px-4 py-3 pr-10 text-white placeholder-gray-400 focus:outline-none focus:ring-0" type="text" id="playerUid" placeholder="Укажи ID своего аккаунта!" maxlength="11">
                     <div class="prices__button pt-[20px]">
-                        <button style="padding: 12px 80px;" class="px-8 py-3 md:px-10 md:py-3 max-[780px]:text-xs text-white text-lg font-base bg-blue-800 rounded-xl">Проверить</button>
+                        <button style="padding: 12px 80px;" id="findBtn" class="px-8 py-3 md:px-10 md:py-3 max-[780px]:text-xs text-white text-lg font-base bg-blue-800 rounded-xl">Проверить</button>
                     </div>
                     </div>
                     <div class="prices__result">
-                        <div class="result__box">
-                            <h3 class="text-2xl text-white font-bold max-[780px]:text-lg">Результат:</h3>
-                            <p class="text-lg text-white fonts-base pt-[10px] max-[780px]:text-xs">Имя игрока: <span id="player-name" class="text-blue-600"></span></p>
-                            <p class="text-lg text-white fonts-base pt-[5px] max-[780px]:text-xs">ID аккаунта: <span id="player-id" class="text-blue-600"></span></p>
+                        <h3 class="text-2xl text-white font-bold max-[780px]:text-lg">Результат:</h3>
+                        <div class="result__box" id="resultat">
+                            <!-- <p class="text-lg text-white fonts-base pt-[10px] max-[780px]:text-xs">Имя игрока: <span id="player-name" class="text-blue-600"></span></p>
+                            <p class="text-lg text-white fonts-base pt-[5px] max-[780px]:text-xs">ID аккаунта: <span id="player-id" class="text-blue-600"></span></p> -->
                         </div>
                     </div>
                 </div>
@@ -328,7 +328,7 @@
         <!-- Contact -->
         <section class="contact" id="contacts">
             <div class="container">
-                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="reviews__items  max-[1000px]:justify-center flex  gap-8  items-center justify-between backdrop-blur-xs bg-[#1b1d24]/70 p-[50px] rounded-2xl max-[500px]:w-100 max-[400px]:w-60 max-[400px]:p-22 ">
+                <div style=" box-shadow: 20px 50px 80px rgba(10, 13, 189, 0.685);" class="reviews__items max-[] max-[1000px]:justify-center flex  gap-8  items-center justify-between backdrop-blur-xs bg-[#1b1d24]/70 p-[50px] rounded-2xl max-[500px]:w-[100%]   max-[500px]:mx-auto  ">
                     <div class="contact__block1 text-white flex flex-col gap-4 max-[1000px]:text-center ">
                         <div class="blog1">
                             <h2 class="text-lg text-white-800 max-[550px]:text-xs">ООО "SPEEDPAY SHOP"</h2>
@@ -348,7 +348,7 @@
 
                         <div class="blog4">
                             <h2 class="max-[550px]:text-xs">© 2024 - 2025 ООО "SpeedPay Shop". Все права защищены.</h2>
-                            <h2 class="max-w-[500px] max-[550px]:text-xs">Перепечатка и любое использвание материалов возможно только при наличии ссылки на первоисточника.</h2>
+                            <h2 class="max-w-[500px] max-[550px]:text-xs  max-[350px]:hidden ">Перепечатка и любое использвание материалов возможно только при наличии ссылки на первоисточника.</h2>
                         </div>
                     </div>
                     <div class="contact__block1 flex text-white gap-8 max-[1000px]:hidden">
