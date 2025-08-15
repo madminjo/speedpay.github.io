@@ -38,7 +38,7 @@ btn.addEventListener('click', () => {
 		`;
 	})
 	.catch(err => {
-		resultatDev.innerHTML = `<p id="error">Ошибка запроса: ${err.message}</p>`;
+		resultatDev.innerHTML = `<p id="error">Такого ID Пере напишите свой ID</p>`;
 	})
 	.finally(() => {
 		btn.disabled = false;
@@ -93,3 +93,4 @@ function animate() {
 }
 
 animate()
+
